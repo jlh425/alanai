@@ -1,8 +1,9 @@
 import React, {useState, useEffect, createRef} from 'react'
 import { Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@mui/material'
-import {news} from "../assets/images/news.svg";
+import {news} from "../../../assets/images/index.js";
 import useStyles from "./styles";
 import classNames from 'classnames';
+
 const NewsCard = ({article: {description, publishedAt, Source, title, url, urlToImage}, i, activeArticle}) => {
   const classes = useStyles();
   const [elRefs, setElRefs] = useState([]);
